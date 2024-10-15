@@ -56,8 +56,31 @@ For each feature, I calculated the churn rate by focusing on customers who had e
 - Variance Inflation Factor (VIF): Conducted VIF analysis to detect multicollinearity issues in the dataset. 'Creditscore' and 'Geography' features had VIF values above 10, indicating high multicollinearity, so they were removed to ensure model performance
 
 ### 5. Model Building
+Developed various supervised machine learning models using Python's Scikit-learn library to predict customer churn. 
+
+The following algorithms were implemented:
+- Logistic Regression
+- K-Nearest Neighbours (KNN)
+- Naive Bayes
+- Decision Tree
+- Random Forest
+- XGBoost
+- LightGBM
+
+Each model was evaluated based on accuracy, precision, recall, F1-score, F2-score.
+Random Forest demonstrated the best overal performance in accuracy, recall, F1-score, and F2-score, making it the optimal choice for predictions
+* Accuracy: 
+* Precision: 
+* Recall: 
+* F1 score: 
+* F2 score: 
 
 ### 6. Model Evaluation
-
+A Confusion Matrix was used to assess the performance of the Random Forest model, with the following results:
+- True Positive(TP): The model correctly predicted that 2309 instances will not churn
+- False Negative(FN): The model incorrectly predicted that 80 instances would churn when they actually did not
+- False Positive(FP): The model incorrectly predicted that 320 instances would not churn when they acutally did
+- True Negative(TN): The model correctly predicted that 291 instances will churn
 
 # Results
+The Random Forest Classifier achieved an accuracy range between 84% and 88%
