@@ -68,19 +68,19 @@ The following algorithms were implemented:
 - LightGBM
 
 Each model was evaluated based on accuracy, precision, recall, F1-score, F2-score.
-Random Forest demonstrated the best overal performance in accuracy, recall, F1-score, and F2-score, making it the optimal choice for predictions
-* Accuracy: 
-* Precision: 
-* Recall: 
-* F1 score: 
-* F2 score: 
+Random Forest demonstrated the best overall performance in accuracy, recall, F1-score, and F2-score, making it the optimal choice for predictions
+* Accuracy: The number of correctly classified data instances over the total number of data instances, (TP+TN)/(TP+TN+FP+FN)
+* Precision: Positive predictive value, TP/(TP+FP)
+* Recall: True positive rate, TP/(TP+FN)
+* F1 score: Average of Precision and Recall, 2 * (Precision*Recall)/(Precision+Recall)
+* F2 score: F1 score's variant ((1+2^2)*Precision*Recall)/((2^2 * Precision)+Recall)
 
 ### 6. Model Evaluation
 A Confusion Matrix was used to assess the performance of the Random Forest model, with the following results:
 - True Positive(TP): The model correctly predicted that 2309 instances will not churn
-- False Negative(FN): The model incorrectly predicted that 80 instances would churn when they actually did not
-- False Positive(FP): The model incorrectly predicted that 320 instances would not churn when they acutally did
-- True Negative(TN): The model correctly predicted that 291 instances will churn
+- False Negative(FN): The model incorrectly predicted that 80 instances would churn when they did not
+- False Positive(FP): The model incorrectly predicted that 320 instances would not churn when they actually did
+- True Negative(TN): The model correctly predicted that 291 instances would churn
 
 # Results
 The Random Forest Classifier achieved an accuracy range between 84% and 88%
